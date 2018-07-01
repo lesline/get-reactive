@@ -14,6 +14,9 @@ public class Test_2_6 {
         return origin.concatWith(Mono.error(new RuntimeException("boom")));
     }
 
+
+
+
     @Test
     public void testWithStepVerifier() {
         Flux<String> source = Flux.just("foo", "bar");
